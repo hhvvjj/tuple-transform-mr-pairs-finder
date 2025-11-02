@@ -51,13 +51,13 @@ Given the isomorphic character of the Tuple-based Transform, these pseudocycles 
 
 ```bash
 # RHEL/CentOS/Rocky/AlmaLinux 8+
-sudo dnf install gcc gcc-c++ make
+sudo dnf groupinstall "Development Tools"
 
 # RHEL/CentOS 7
-sudo yum install gcc gcc-c++ make
+sudo yum groupinstall "Development Tools"
 
 # Fedora
-sudo dnf install gcc gcc-c++ make
+sudo dnf groupinstall "Development Tools"
 
 # Verify OpenMP support
 gcc -fopenmp --version
@@ -68,23 +68,10 @@ gcc -fopenmp --version
 ```bash
 # Ubuntu/Debian/Mint
 sudo apt update
-sudo apt install build-essential
+sudo apt install build-essential manpages-dev
 
 # Verify OpenMP support
 gcc -fopenmp --version
-```
-
-#### Additional Development Tools (Optional)
-
-```bash
-# Red Hat-based systems
-sudo dnf groupinstall "Development Tools"
-
-# or
-sudo yum groupinstall "Development Tools"
-
-# Debian-based systems
-sudo apt install build-essential manpages-dev
 ```
 
 ### Compilation
