@@ -68,9 +68,6 @@ gcc -fopenmp --version
 ```bash
 # Ubuntu/Debian/Mint
 sudo apt update
-sudo apt install build-essential gcc
-
-# Alternative: Install development tools metapackage
 sudo apt install build-essential
 
 # Verify OpenMP support
@@ -82,6 +79,7 @@ gcc -fopenmp --version
 ```bash
 # Red Hat-based systems
 sudo dnf groupinstall "Development Tools"
+
 # or
 sudo yum groupinstall "Development Tools"
 
